@@ -91,9 +91,7 @@ contract FreeRider is Test {
         assertEq(uniswapV2Pair.token1(), address(weth));
         assertGt(uniswapV2Pair.balanceOf(deployer), 0);
 
-        freeRiderNFTMarketplace = new FreeRiderNFTMarketplace{
-            value: MARKETPLACE_INITIAL_ETH_BALANCE
-        }(AMOUNT_OF_NFTS);
+        freeRiderNFTMarketplace = new FreeRiderNFTMarketplace{value: MARKETPLACE_INITIAL_ETH_BALANCE}(AMOUNT_OF_NFTS);
 
         damnValuableNFT = DamnValuableNFT(freeRiderNFTMarketplace.token());
 
@@ -120,10 +118,7 @@ contract FreeRider is Test {
 
         vm.startPrank(buyer);
 
-        freeRiderBuyer = new FreeRiderBuyer{value: BUYER_PAYOUT}(
-            attacker,
-            address(damnValuableNFT)
-        );
+        freeRiderBuyer = new FreeRiderBuyer{value: BUYER_PAYOUT}(attacker, address(damnValuableNFT));
 
         vm.stopPrank();
 

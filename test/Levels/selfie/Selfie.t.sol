@@ -31,10 +31,7 @@ contract Selfie is Test {
         simpleGovernance = new SimpleGovernance(address(dvtSnapshot));
         vm.label(address(simpleGovernance), "Simple Governance");
 
-        selfiePool = new SelfiePool(
-            address(dvtSnapshot),
-            address(simpleGovernance)
-        );
+        selfiePool = new SelfiePool(address(dvtSnapshot), address(simpleGovernance));
 
         dvtSnapshot.transfer(address(selfiePool), TOKENS_IN_POOL);
 
