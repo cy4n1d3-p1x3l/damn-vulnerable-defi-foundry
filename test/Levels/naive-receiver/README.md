@@ -8,3 +8,7 @@ Drain all ETH funds from the user's contract. Doing it in a single transaction i
 [See the contracts](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/tree/master/src/Contracts/naive-receiver)
 <br/>
 [Complete the challenge](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/blob/master/test/Levels/naive-receiver/NaiveReceiver.t.sol)
+
+## Solution 
+
+The exploit lies in the fact that we can just call the contract NaiveReceiverLenderPool.sol and provide the borrower contract and it will make it pay the fee without any verification. 
