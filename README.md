@@ -66,3 +66,9 @@ If the challenge is executed successfully, you've passed!🙌🙌
 ### Solutions
 
 The test folder is complete with all the tests with respective commits
+
+Run any specific test using 
+
+```
+forge test --match-contract [LEVEL_NAME] 
+```
