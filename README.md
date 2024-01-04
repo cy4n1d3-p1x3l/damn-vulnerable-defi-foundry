@@ -1,25 +1,19 @@
 # Damn Vulnerable DeFi - Foundry Version ⚒️
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry)
+My Solution for the famous damn-defi problems in foundry.
 
-![Github Actions][gha-badge] [![Telegram Support][tg-support-badge]][tg-support-url]
-
-[gha-badge]: https://img.shields.io/github/workflow/status/nicolasgarcia214/damn-vulnerable-defi-foundry/CI
-[tg-support-badge]: https://img.shields.io/endpoint?color=neon&logo=telegram&label=support&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Ffoundry_support
-[tg-support-url]: https://t.me/foundry_support
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/ngp2311?label=Follow%20me%20%40ngp2311&style=social)](https://twitter.com/ngp2311)
+[![Twitter Follow](https://img.shields.io/twitter/follow/ngp2311?label=Follow%20me%20%40ngp2311&style=social)](https://twitter.com/0xcyanide)
 
 Visit [damnvulnerabledefi.xyz](https://damnvulnerabledefi.xyz)
 
 ### Acknowledgement
-*Big thanks to [Tincho](https://twitter.com/tinchoabbate) who created the [first version of this game](https://github.com/tinchoabbate/damn-vulnerable-defi/tree/v2.0.0) and to all the fellows behind the [Foundry Framework](https://github.com/gakonst/foundry/graphs/contributors)*
+*Big thanks to [Tincho](https://twitter.com/tinchoabbate) who created the [first version of this game](https://github.com/tinchoabbate/damn-vulnerable-defi/tree/v2.0.0) and to all the fellows behind the [Foundry Framework](https://github.com/gakonst/foundry/graphs/contributors) and also [Nicolás](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry) from whom i cloned the repo for the foundry version*
 
 Damn Vulnerable DeFi is the wargame to learn offensive security of DeFi smart contracts.
 
 Throughout numerous challenges you will build the skills to become a bug hunter or security auditor in the space. 🕵️‍♂️
 
-## How To Play 🕹️
+## How To play 🕹️
 
 1.  **Install Foundry**
 
@@ -36,39 +30,25 @@ foundryup
 ```
 
 2. **Clone This Repo and install dependencies**
-``` 
+```bash 
 git clone https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry.git
 cd damn-vulnerable-defi-foundry
 forge install
 ```
-3. **Code your solutions in the provided `[NAME_OF_THE_LEVEL].t.sol` files (inside each level's folder in the test folder)**
-4. **Run your exploit for a challenge**
-```
+
+3. **Run your exploit for a challenge**
+
+```console
 make [CONTRACT_LEVEL_NAME]
 ```
-or
-```
-./run.sh [LEVEL_FOLDER_NAME]
-./run.sh [CHALLENGE_NUMBER]
-./run.sh [4_FIRST_LETTER_OF_NAME] 
-```
-If the challenge is executed successfully, you've passed!🙌🙌
+which essentially the command
 
-### Tips and tricks ✨
-- In all challenges you must use the account called attacker. In Forge, you can use the [cheat code](https://github.com/gakonst/foundry/tree/master/forge#cheat-codes) `prank` or `startPrank`.
-- To code the solutions, you may need to refer to the [Foundry Book](https://book.getfoundry.sh/).
-- In some cases, you may need to code and deploy custom smart contracts.
-
-### Preinstalled dependencies
-
-`ds-test` for testing, `forge-std` for better cheatcode UX, and `openzeppelin-contracts` for contract implementations.
-
-### Solutions
-
-The test folder is complete with all the tests with respective commits
-
-Run any specific test using 
-
-```
+```bash
 forge test --match-contract [LEVEL_NAME] 
 ```
+
+If the challenge is executed successfully, you've passed!🙌🙌
+
+## Solutions
+
+You can view my solutions in the respective test folders' Readme files.

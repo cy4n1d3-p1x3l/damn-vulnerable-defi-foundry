@@ -10,4 +10,5 @@ You start with 100 DVT tokens in balance.
 [Complete the challenge](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/blob/master/test/Levels/unstoppable/Unstoppable.t.sol)
 
 ## Solution
-The exploit lies in the fact that we can just increase the balance of UnstoppableLender contract and fail the assert statement [here](src/Contracts/unstoppable/UnstoppableLender.sol#L41)
+
+The exploit lies in the fact that we can just increase the balance of UnstoppableLender contract and fail the assert statement [here](../../../src/Contracts/unstoppable/UnstoppableLender.sol#L41)
