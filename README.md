@@ -2,7 +2,7 @@
 
 My Solution for the famous damn-defi problems in foundry.
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/ngp2311?label=Follow%20me%20%40ngp2311&style=social)](https://twitter.com/0xcyanide)
+[![Twitter Follow](https://img.shields.io/twitter/follow/0xcyanide?label=Follow%20me%20%400xcyanide&style=social)](https://twitter.com/0xcyanide)
 
 Visit [damnvulnerabledefi.xyz](https://damnvulnerabledefi.xyz)
 
