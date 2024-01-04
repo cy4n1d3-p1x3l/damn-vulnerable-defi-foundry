@@ -62,3 +62,7 @@ If the challenge is executed successfully, you've passed!🙌🙌
 ### Preinstalled dependencies
 
 `ds-test` for testing, `forge-std` for better cheatcode UX, and `openzeppelin-contracts` for contract implementations.
+
+### Solutions
+
+The test folder is complete with all the tests with respective commits
