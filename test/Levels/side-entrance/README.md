@@ -11,3 +11,4 @@ You must take all ETH from the lending pool.
 
 ## Solution
 
+The vulnerability lies in the fact that the Lending Pool will consider the loan repaid if we just deposit the amount using the deposit function. And so we execute the [attack](../../../src/Contracts/side-entrance/Exploit.sol#L13) function which takes a flash loan and deposits it back. It then withdraws the amount and transfers it back to us. Hence completing the exploi.
