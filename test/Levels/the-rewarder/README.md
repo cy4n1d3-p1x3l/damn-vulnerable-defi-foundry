@@ -10,3 +10,7 @@ Oh, by the way, rumours say a new pool has just landed on mainnet. Isn't it offe
 [See the contracts](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/tree/master/src/Contracts/the-rewarder)
 <br/>
 [Complete the challenge](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/blob/master/test/Levels/the-rewarder/TheRewarder.t.sol)
+
+## Solution 
+
+The vulnerability lied in the fact that we can just take a flash loan deposit the loan in the RewardPool diluting the reards for others and claiming most of them for us. 
