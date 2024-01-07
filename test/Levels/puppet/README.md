@@ -8,3 +8,8 @@ Starting with 25 ETH and 1000 DVTs in balance, you must steal all tokens from th
 [See the contracts](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/tree/master/src/Contracts/puppet)
 <br/>
 [Complete the challenge](https://github.com/nicolasgarcia214/damn-vulnerable-defi-foundry/blob/master/test/Levels/puppet/Puppet.t.sol)
+
+## Solution 
+
+Firstly there is some issue with foundry latest version so i had to use this sepcific commit and it worked ```94777647f6ea5d34572a1b15c9b57e35b8c77b41```.
+We can just manipulate the exchange rate and drain the contract of all the dvt tokens. You can see the exploit [here](./Puppet.t.sol/#L102).  
